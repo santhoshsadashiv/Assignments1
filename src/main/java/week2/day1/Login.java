@@ -36,6 +36,7 @@ public class Login {
 			driver.findElement(By.name("submitButton")).click();
 			WebElement status = driver.findElement(By.id("viewLead_statusId_sp"));
 			String statusText=status.getText();
+			
 			if(statusText.equals("Assigned")) {
 				System.out.println("Status is Pass");
 			}
